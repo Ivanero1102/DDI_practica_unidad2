@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox prefHeight="200.0" prefWidth="300.0">
+         <children>
+            <Label alignment="CENTER" prefWidth="633.0" text="Nombre" textAlignment="CENTER">
+               <padding>
+                  <Insets bottom="5.0" top="10.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="textFieldNombre" alignment="CENTER" />
+            <Label alignment="CENTER" prefWidth="633.0" text="DNI" textAlignment="CENTER">
+               <padding>
+                  <Insets bottom="5.0" top="10.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="textFieldDNI" alignment="CENTER" />
+            <Label alignment="CENTER" prefWidth="633.0" text="Teléfono" textAlignment="CENTER">
+               <padding>
+                  <Insets bottom="5.0" top="10.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="textFieldTelefono" alignment="CENTER" />
+            <Label alignment="CENTER" prefWidth="633.0" text="Instalación" textAlignment="CENTER">
+               <padding>
+                  <Insets bottom="5.0" top="10.0" />
+               </padding>
+            </Label>
+            <ChoiceBox fx:id="choiceBoxInstalaciones" prefHeight="25.0" prefWidth="261.0" />
+            <Label alignment="CENTER" prefHeight="33.0" prefWidth="633.0" text="Fecha de reserva" textAlignment="CENTER">
+               <padding>
+                  <Insets bottom="5.0" top="10.0" />
+               </padding>
+            </Label>
+            <DatePicker fx:id="DatePickerFechaReserva" prefHeight="25.0" prefWidth="275.0" />
+            <Label alignment="CENTER" prefWidth="633.0" text="Duración" textAlignment="CENTER">
+               <padding>
+                  <Insets bottom="5.0" top="10.0" />
+               </padding>
+            </Label>
+            <ChoiceBox fx:id="choiceBoxDuracion" prefHeight="25.0" prefWidth="261.0" />
+            <Label alignment="CENTER" prefWidth="633.0" text="Observaciones" textAlignment="CENTER">
+               <padding>
+                  <Insets bottom="5.0" top="10.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="textFieldObservaciones" alignment="CENTER" />
+         </children>
+         <HBox.margin>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </HBox.margin>
+      </VBox>
+      <VBox prefHeight="200.0" prefWidth="300.0">
+         <children>
+            <Label alignment="CENTER" prefWidth="633.0" text="Apellidos" textAlignment="CENTER">
+               <padding>
+                  <Insets bottom="5.0" top="10.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="textFieldApellidos" alignment="CENTER" />
+            <Label alignment="CENTER" prefWidth="633.0" text="Fecha de nacimiento" textAlignment="CENTER">
+               <padding>
+                  <Insets bottom="5.0" top="10.0" />
+               </padding>
+            </Label>
+            <DatePicker fx:id="DatePickerFechaNacimiento" prefHeight="25.0" prefWidth="275.0" />
+            <Label alignment="CENTER" prefWidth="633.0" text="Correo electronico" textAlignment="CENTER">
+               <padding>
+                  <Insets bottom="5.0" top="10.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="textFieldCorreoElectronico" alignment="CENTER" />
+            <Label alignment="CENTER" prefWidth="633.0" text="Actividad" textAlignment="CENTER">
+               <padding>
+                  <Insets bottom="5.0" top="10.0" />
+               </padding>
+            </Label>
+            <ChoiceBox fx:id="choiceBoxActividad" prefHeight="25.0" prefWidth="261.0" />
+            <Label alignment="CENTER" prefWidth="633.0" text="Hora" textAlignment="CENTER">
+               <padding>
+                  <Insets bottom="5.0" top="10.0" />
+               </padding>
+            </Label>
+            <ChoiceBox fx:id="choiceBoxHora" prefHeight="25.0" prefWidth="261.0" />
+            <Label alignment="CENTER" prefWidth="633.0" text="Tipo de usuario" textAlignment="CENTER">
+               <padding>
+                  <Insets bottom="5.0" top="10.0" />
+               </padding>
+            </Label>
+            <ChoiceBox fx:id="choiceBoxTipoUsuario" prefHeight="25.0" prefWidth="261.0" />
+            <Button fx:id="Button" mnemonicParsing="false" prefHeight="25.0" prefWidth="279.0" text="Button" textAlignment="CENTER">
+               <VBox.margin>
+                  <Insets top="32.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+         <HBox.margin>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </HBox.margin>
+      </VBox>
+   </children>
+</HBox>
