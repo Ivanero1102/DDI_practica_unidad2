@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="interfaces.Controller">
    <children>
       <VBox prefHeight="200.0" prefWidth="300.0">
          <children>
@@ -42,7 +42,7 @@
                   <Insets bottom="5.0" top="10.0" />
                </padding>
             </Label>
-            <DatePicker fx:id="DatePickerFechaReserva" prefHeight="25.0" prefWidth="275.0" />
+            <DatePicker fx:id="datePickerFechaReserva" prefHeight="25.0" prefWidth="275.0" />
             <Label alignment="CENTER" prefWidth="633.0" text="Duración" textAlignment="CENTER">
                <padding>
                   <Insets bottom="5.0" top="10.0" />
@@ -73,7 +73,7 @@
                   <Insets bottom="5.0" top="10.0" />
                </padding>
             </Label>
-            <DatePicker fx:id="DatePickerFechaNacimiento" prefHeight="25.0" prefWidth="275.0" />
+            <DatePicker fx:id="datePickerFechaNacimiento" prefHeight="25.0" prefWidth="275.0" />
             <Label alignment="CENTER" prefWidth="633.0" text="Correo electronico" textAlignment="CENTER">
                <padding>
                   <Insets bottom="5.0" top="10.0" />
@@ -98,7 +98,7 @@
                </padding>
             </Label>
             <ChoiceBox fx:id="choiceBoxTipoUsuario" prefHeight="25.0" prefWidth="261.0" />
-            <Button fx:id="Button" mnemonicParsing="false" prefHeight="25.0" prefWidth="279.0" text="Button" textAlignment="CENTER">
+            <Button fx:id="Button" mnemonicParsing="false" onAction="#handleGuardarReserva" prefHeight="25.0" prefWidth="279.0" text="Button" textAlignment="CENTER">
                <VBox.margin>
                   <Insets top="32.0" />
                </VBox.margin>
